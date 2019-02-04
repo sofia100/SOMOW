@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "314132283024",
+    "firebase_url": "https://somow-2a717.firebaseio.com",
+    "project_id": "somow-2a717",
+    "storage_bucket": "somow-2a717.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314132283024:android:ed1237b682d9b553",
+        "android_client_info": {
+          "package_name": "com.example.android.somow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314132283024-u7r70798mhgjbhfar1b5v5ihn6dkgp1m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.somow",
+            "certificate_hash": "4923ffaed5c54726b57f5c7482d7e2056faf0ea3"
+          }
+        },
+        {
+          "client_id": "314132283024-3tdi9bak0klocpli0p6u0osf8i6o1d1f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYy7FOgJYszv5zKQre0zZUdJOqWcazZiM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314132283024-3tdi9bak0klocpli0p6u0osf8i6o1d1f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
