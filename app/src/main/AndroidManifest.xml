@@ -20,7 +20,16 @@
         </activity>
         <activity android:name=".login" />
         <activity android:name=".registration" />
-        <activity android:name=".DASHBOARD"></activity>
+
+        <activity android:name=".DASHBOARD"
+            android:label="Dashboard"/>
+        <activity android:name=".auctionslive"
+            android:label="Description"/>
+        <activity android:name=".newauctions"
+            android:label="new"/>
+        <activity android:name=".myauctions"
+            android:label="mine"/>
+
     </application>
 
 </manifest>
