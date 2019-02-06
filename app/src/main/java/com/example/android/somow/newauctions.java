@@ -104,6 +104,7 @@ public class newauctions extends AppCompatActivity {
 
                                     //and displaying a success toast
                                     Toast.makeText(getApplicationContext(), "File Uploaded ", Toast.LENGTH_LONG).show();
+                                    finish();
 
                                 }
                             })
