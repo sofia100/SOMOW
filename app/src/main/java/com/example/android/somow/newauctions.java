@@ -29,7 +29,7 @@ import java.io.IOException;
 
 public class newauctions extends AppCompatActivity {
     Button camera,gallery,ok; //ok=upload,gallery==chose
-     String url;
+     Uri url;
     ImageView imageView;
     private Uri uri;
     StorageReference riversRef;
@@ -88,12 +88,13 @@ public class newauctions extends AppCompatActivity {
                                         public void onSuccess(Uri uri) {
                                            // Uri downloadUrl = uri;
                                             Log.v("newauction"," eithi !!!");
-                                            url=uri.toString();
+
+                                            url=uri;
                                            // Toast.makeText(getBaseContext(), "Upload success! URL - " + downloadUrl.toString() , Toast.LENGTH_SHORT).show();
                                         }
                                     });
                                     //reference
-                                    ImageUpload imageupload = new ImageUpload(description.getText().toString(),uri,timelimit.getText().toString(),bidprice.getText().toString());
+                                    ImageUpload imageupload = new ImageUpload(description.getText().toString(),url,timelimit.getText().toString(),bidprice.getText().toString());
                                     Toast.makeText(getApplicationContext(), "111 ", Toast.LENGTH_LONG).show();
                                     String uploadId =mDatabaseRef.push().getKey();
                                     Toast.makeText(getApplicationContext(), "222 ", Toast.LENGTH_LONG).show();
