@@ -1,58 +1,6 @@
-/*package com.example.android.somow;
-
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.MenuItem;
-
-import com.example.android.somow.R;
-
-public class DASHBOARD extends AppCompatActivity {
-
-    private ActionBar toolbar;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dashboard);
-        toolbar = getSupportActionBar();
-
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-
-        toolbar.setTitle("Shop");
-    }
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment fragment;
-            switch (item.getItemId()) {
-                case R.id.navigation_shop:
-                    toolbar.setTitle("Shop");
-                    return true;
-                case R.id.navigation_gifts:
-                    toolbar.setTitle("My Gifts");
-                    return true;
-                case R.id.navigation_cart:
-                    toolbar.setTitle("Cart");
-                    return true;
-                case R.id.navigation_profile:
-                    toolbar.setTitle("Profile");
-                    return true;
-            }
-            return false;
-        }
-    };
-}
-    }
-}
-*/
 package com.example.android.somow;
+
+
 import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
@@ -97,7 +45,7 @@ ListView listView;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-    /*   String DATABASE_PATH = "images";
+    String DATABASE_PATH = "images";
 
         Log.v("DASHBOARD","ALL FINE :p");
         mDatabaseRef = FirebaseDatabase.getInstance().getReference(DATABASE_PATH);
@@ -169,7 +117,7 @@ ListView listView;
                 // ...
             }
         });
-
+*/
        if(mchild==null) {
            Log.v("DASHBOARD","in here :p");
 
@@ -177,7 +125,7 @@ ListView listView;
                 //  Log.v("DASHBOARD","over here :p");
 
                @Override
-                public void onChildAdded( DataSnapshot dataSnapshot, String s) {
+                public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                    Log.v("DASHBOARD","here bro!! :p");
 
                    ImageUpload friendlyMessage = dataSnapshot.getValue(ImageUpload.class);
@@ -219,7 +167,7 @@ ListView listView;
             };
             mDatabaseRef.addChildEventListener(mchild);
         }
-*/
+
 
 
         TextView buttons5 = (TextView) findViewById(R.id.button5);
