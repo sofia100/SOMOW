@@ -9,6 +9,7 @@ import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -73,23 +74,30 @@ public class newauctions extends AppCompatActivity {
                 //if there is a file to upload
                 if (uri != null) {
                     Toast.makeText(getApplicationContext()," Image is selected",Toast.LENGTH_SHORT).show();
+
                      riversRef = mStorageRef.child(STORAGE_PATH+System.currentTimeMillis()+"." +getImg(uri));
+                     Log.v("","here !!!");
                     riversRef.putFile(uri)
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                                 @Override
                                 public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
+                                    Log.v("newacution","here also !!!");
                                    riversRef.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                         @Override
                                         public void onSuccess(Uri uri) {
                                            // Uri downloadUrl = uri;
+                                            Log.v("newauction"," eithi !!!");
                                             url=uri.toString();
                                            // Toast.makeText(getBaseContext(), "Upload success! URL - " + downloadUrl.toString() , Toast.LENGTH_SHORT).show();
                                         }
                                     });
                                     //reference
                                     ImageUpload imageupload = new ImageUpload(description.getText().toString(),uri,timelimit.getText().toString(),bidprice.getText().toString());
+                                    Toast.makeText(getApplicationContext(), "111 ", Toast.LENGTH_LONG).show();
                                     String uploadId =mDatabaseRef.push().getKey();
+                                    Toast.makeText(getApplicationContext(), "222 ", Toast.LENGTH_LONG).show();
+
                                     mDatabaseRef.child(uploadId).setValue(imageupload);
                                     //if the upload is successful
 

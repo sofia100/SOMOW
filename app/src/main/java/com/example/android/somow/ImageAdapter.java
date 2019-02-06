@@ -26,7 +26,7 @@ public class ImageAdapter extends ArrayAdapter<ImageUpload> {
         View list = convertView;
         if(list==null)
         {
-            list= LayoutInflater.from(getContext()).inflate(R.layout.activity_dashboard,parent,false);
+            list= LayoutInflater.from(getContext()).inflate(R.layout.list,parent,false);
         }
         ImageUpload currAdhy=getItem(position);
 

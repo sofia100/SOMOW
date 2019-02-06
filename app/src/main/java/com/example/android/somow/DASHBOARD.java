@@ -118,7 +118,7 @@ ListView listView;
             }
         });
 */
-       if(mchild==null) {
+    /*   if(mchild==null) {
            Log.v("DASHBOARD","in here :p");
 
            mchild = new ChildEventListener() {
@@ -168,7 +168,7 @@ ListView listView;
             mDatabaseRef.addChildEventListener(mchild);
         }
 
-
+*/
 
         TextView buttons5 = (TextView) findViewById(R.id.button5);
         buttons5.setOnClickListener(new View.OnClickListener() {
