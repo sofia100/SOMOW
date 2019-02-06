@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open gallery"
+        android:id="@+id/gallery"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="open camera"
+        android:id="@+id/camera"
+        android:textAllCaps="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:id="@+id/imageview"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descrption"
+        android:hint="@string/hint_description"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/timelimit"
+        android:layout_height="wrap_content"
+        android:hint="TIME LIMIT (hh:mm)"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bidprice"
+        android:hint="@string/enter_base_price" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="ok"
+        android:id="@+id/ok"
+        android:textAllCaps="true"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+</ScrollView>
