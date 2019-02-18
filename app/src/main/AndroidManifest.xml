@@ -29,6 +29,9 @@
             android:label="new"/>
         <activity android:name=".myauctions"
             android:label="mine"/>
+        <activity android:name=".history"
+            android:label="History"/>
+
 
     </application>
 

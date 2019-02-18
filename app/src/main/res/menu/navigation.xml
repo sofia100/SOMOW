@@ -2,18 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_shop"
+        android:id="@+id/action_mine"
         android:icon="@drawable/my_auction"
         android:title="myAuction" />
 
     <item
-        android:id="@+id/navigation_gifts"
+        android:id="@+id/action_new"
         android:icon="@drawable/new_auction"
         android:title="new auction" />
 
 
     <item
-        android:id="@+id/navigation_profile"
+        android:id="@+id/history"
         android:icon="@drawable/history"
         android:title="history" />
 

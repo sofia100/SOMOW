@@ -28,7 +28,7 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 
 public class newauctions extends AppCompatActivity {
-    Button camera,gallery,ok; //ok=upload,gallery==chose
+    Button gallery,ok; //ok=upload,gallery==chose
      Uri url;
     ImageView imageView;
     private Uri uri;
@@ -49,8 +49,6 @@ public class newauctions extends AppCompatActivity {
 
         mStorageRef = FirebaseStorage.getInstance().getReference();
         mDatabaseRef = FirebaseDatabase.getInstance().getReference(DATABASE_PATH);
-
-        camera=findViewById(R.id.camera);
 
         gallery=findViewById(R.id.gallery);
         ok=findViewById(R.id.ok);
@@ -95,9 +93,7 @@ public class newauctions extends AppCompatActivity {
                                     });
                                     //reference
                                     ImageUpload imageupload = new ImageUpload(description.getText().toString(),url,timelimit.getText().toString(),bidprice.getText().toString());
-                                    Toast.makeText(getApplicationContext(), "111 ", Toast.LENGTH_LONG).show();
                                     String uploadId =mDatabaseRef.push().getKey();
-                                    Toast.makeText(getApplicationContext(), "222 ", Toast.LENGTH_LONG).show();
 
                                     mDatabaseRef.child(uploadId).setValue(imageupload);
                                     //if the upload is successful
